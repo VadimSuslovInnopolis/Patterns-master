@@ -5,27 +5,27 @@ package State;
  */
 public class Send extends State {
     @Override
-    public boolean send() {
+    public boolean send(Document document) {
         return true;
     }
 
     @Override
-    public boolean newDoc() {
+    public boolean newDoc(Document document) {
         return false;
     }
 
     @Override
-    public boolean podpis() {
+    public boolean podpis(Document document) {
         return false;
     }
 
     @Override
-    public boolean errorPodpis() {
+    public boolean errorPodpis(Document document) {
         return false;
     }
 
     @Override
-    public boolean endState() {
+    public boolean endState(Document document) {
         return false;
     }
 }

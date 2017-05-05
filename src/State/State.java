@@ -7,10 +7,10 @@ public abstract class State {
     enum DocState {Send, New, Podpis, ErrorPodpis, End};
 
     private DocState docState;
-    public abstract boolean send();
-    public abstract boolean newDoc();
-    public abstract boolean podpis();
-    public abstract boolean errorPodpis();
-    public abstract boolean endState();
+    public abstract boolean send(Document document);
+    public abstract boolean newDoc(Document document);
+    public abstract boolean podpis(Document document);
+    public abstract boolean errorPodpis(Document document);
+    public abstract boolean endState(Document document);
 
 }

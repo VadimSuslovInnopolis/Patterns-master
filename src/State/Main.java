@@ -6,5 +6,8 @@ package State;
 public class Main {
     public static void main(String[] args) {
         Document document = new Document();
+
+        Send send = new Send();
+        send.send(document);
     }
 }
